@@ -1,0 +1,235 @@
+/* Existing styles */
+
+body {
+    font-family: Roboto Slab;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    background-image: url('home.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height:85px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure the header is on top of other elements */
+}
+/* Make text color white */
+#home {
+    color: #fff; /* White color */
+}
+
+.home-page {
+    background-image: url('darkhome.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+#home {
+    font-family: 'Your Font Name', sans-serif;
+    color: white;
+}
+
+}
+
+.home-page-content {
+    max-width: 800px;
+    margin: 0 auto;
+	
+}
+
+.home-page-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-page-content h2 {
+   
+   font-family:Angkor;
+	font-size: 1.2em;
+    margin-bottom: 20px;
+	color: #fff;
+}
+
+.home-page-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-page-content .btn:hover {
+    background-color: #555;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    color: #666;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+    background-color: rgba(236, 240, 241); /* cream background color */
+    color: #2E4053; /* Light text color */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center-align text */
+    border-top: 1px solid #ddd; /* Top border */
+    font-size: 16px; /* Larger font size */
+    font-family: 'Your Preferred Font', sans-serif; /* Use a specific font */
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icons li {
+    margin-right: 10px;
+}
+
+.social-media-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+}
+
+
+/* Optional: Add hover effect */
+footer:hover {
+    background-color: #555; /* Darken the background color on hover */
+}
+
+/* New styles for container and cards */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.card {
+    width: 300px; /* Set the width of the card */
+    height: 300px; /* Set the height of the card */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
